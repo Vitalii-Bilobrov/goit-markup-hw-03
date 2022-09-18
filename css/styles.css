@@ -1,0 +1,213 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+:root {
+  --color-mainBlue: #2196F3;
+  --color-mainBlack:#000000;
+  --color-lightGray:#757575;
+  --color-darckGray:#2F303A;
+  --color-mainWhite:#FFFFFF;
+  --color-veryDark:#212121;
+  --color-greatLight:#EEEEEE;
+}
+.header{
+  display: flex;
+  height: 80px;
+}
+.body {
+  font-family: "Roboto", sans-serif;
+  color: var(--color-mainBlack);
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+nav{
+  display: flex;
+}
+.current-page-link {
+  color:var(--color-mainBlue) ;
+}
+.nav-links{
+  display: flex;
+}
+.tel-email{
+display: flex;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.1;
+letter-spacing: 0.02em;
+}
+.button {
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+.button:hover, button:focus{
+  color:var(--color-mainWhite);
+  background-color: var(--color-mainBlue);
+}
+a {
+  color:var(--color-mainBlack);
+  text-decoration: none;
+}
+ul{
+  list-style-type: none;
+}
+.company-name {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1,2;
+}
+.company-name-blue{
+  color:var(--color-mainBlue);
+}
+nav{
+font-weight: 500;
+font-size: 14px;
+line-height: 1,1;
+letter-spacing: 0.02em;
+}
+.gray-links{
+color: var(--color-lightGray);
+
+}
+.hero{
+background-color: var(--color-darckGray);
+color: var(--color-mainWhite);
+height: 600px;
+}
+.advantages-description{
+color:var(--color-lightGray);
+}
+.motto{
+font-weight: 900;
+font-size: 44px;
+line-height: 1,4;
+color: var(--color-mainWhite);
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}
+.button{
+  height: 50px;
+  width: 216px;
+  font-weight: 700;
+font-size: 16px;
+line-height: 1,9;
+background: var(--color-mainBlue);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+color: var(--color-mainWhite);
+letter-spacing: 0.06em;
+}
+.button-porfolio{
+font-weight: 500;
+line-height: 1.6;
+text-align: center;
+letter-spacing: 0.03em;
+}
+.advantages{
+  display: flex;
+}
+.advantages-main{
+font-weight: 700;
+font-size: 14px;
+line-height: 1,4;
+letter-spacing: 0.03em;
+}
+.advantages-description{
+font-size: 14px;
+line-height: 1,7;
+color: var(--color-lightGray);
+}
+.work{
+  display: flex;
+}
+.team{
+  display: flex;
+}
+.card{
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+}
+.team-member-name{
+font-weight: 500;
+font-size: 16px;
+line-height: 1,2;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--color-veryDark);
+}
+.team-member-position{
+font-size: 16px;
+line-height: 1,2;
+color: var(--color-lightGray);
+text-align: center;
+}
+/*Portfolio*/
+.buttons{
+  display: flex;
+}
+.projects{
+  display: flex;
+}
+.buttons button{
+font-weight: 500;
+line-height: 1,6;
+text-align: center;
+padding: 6px 22px;
+}
+.projects li{
+ width: 370px;
+ height: 404px;
+}
+.projects div{
+  border: 1px solid var(--color-greatLight) ;
+  border-top: none;
+  
+ }
+.projects-name{
+font-weight: 700;
+font-size: 18px;
+line-height: 2;
+letter-spacing: 0.06em;
+}
+.projects-style{
+line-height: 1,9;
+color: var(--color-lightGray);
+}
+.projects-type{
+font-size: 16px;
+line-height: 1.9;
+color: var(--color-lightGray);
+}
+.footer{
+  background-color: var(--color-darckGray);
+}
+.footer span:last-child{
+  color: var(--color-mainWhite);
+}
+.address{
+font-style: normal;
+font-size: 14px;
+line-height: 1,7;
+color: var(--color-mainWhite);
+}
+address .email, address .tel{
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1,7;
+  color: rgba(255, 255, 255, 0.6);
+}
+.link:hover{
+  color:var(--color-mainBlue);
+}
+.link:focus{
+  color: var(--color-mainBlue);
+}
+.toHide{
+  display: none;
+}
