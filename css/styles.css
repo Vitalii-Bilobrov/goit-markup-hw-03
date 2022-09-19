@@ -39,6 +39,12 @@ h1, h2{
 }
 .header .container{
   display:flex;
+  height: 80px;
+  
+}
+.header-company-name-link{
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 nav{
   display: flex;
@@ -48,6 +54,13 @@ nav{
 }
 .nav-links{
   display: flex;
+  align-items: center;
+}
+.nav-links li:first-child{
+  margin-left: 93px;
+}
+.nav-links li:nth-child(2), .nav-links li:nth-child(3){
+  margin-left: 50px;
 }
 .tel-email{
 display: flex;
@@ -55,6 +68,14 @@ font-weight: 500;
 font-size: 14px;
 line-height: 1.1;
 letter-spacing: 0.02em;
+margin-left: 342px;
+padding-top: 32px;
+padding-bottom: 32px;
+margin-top: 0;
+margin-bottom: 0;
+}
+.tel-email li:nth-child(2){
+  margin-left: 50px;
 }
 .button:hover, button:focus{
   color:var(--color-mainWhite);
@@ -66,6 +87,10 @@ a {
 }
 ul{
   list-style-type: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+
 }
 .hero .container{
   padding-top: 200px;
@@ -93,6 +118,9 @@ color: var(--color-lightGray);
 background-color: var(--color-darckGray);
 color: var(--color-mainWhite);
 height: 600px;
+}
+.hero .container{
+  text-align: center;
 }
 .advantages-description{
 color:var(--color-lightGray);
@@ -124,7 +152,6 @@ margin-right: auto;
   width: 216px;
   height: 50px;
   margin-top: 30px;
-  margin-inline: auto;
   
 }
 .advantages-section{
@@ -188,8 +215,17 @@ color: var(--color-lightGray);
 text-align: center;
 }
 /*Portfolio*/
-.buttons{
+.section-projects{
+  margin-bottom: 94px;
+}
+.flex{
   display: flex;
+justify-content: center;
+}
+.buttons-portfolio{
+  display: flex;
+  margin-top: 94px;
+  align-items: center;
 }
 .button-porfolio{
 font-family: 'Roboto';
@@ -207,33 +243,44 @@ border: none;
 }
 .projects{
   display: flex;
+  margin-top: 50px;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+.projects img{
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 .projects li{
  width: 370px;
- height: 404px;
 }
 .projects div{
   border: 1px solid var(--color-greatLight) ;
   border-top: none;
-  
- }
+  padding-top: 24px;
+}
 .projects-name{
 font-weight: 700;
 font-size: 18px;
 line-height: 2;
 letter-spacing: 0.06em;
+text-align: left;
+margin-left: 24px;
 }
-.projects-style{
-line-height: 1.9;
-color: var(--color-lightGray);
-}
+
 .projects-type{
 font-size: 16px;
 line-height: 1.9;
 color: var(--color-lightGray);
+margin-left: 24px;
+margin-top: 4px;
+margin-bottom: 20px;
 }
 .footer{
   background-color: var(--color-darckGray);
+  padding-top: 60px;
+  padding-bottom: 60px;
 
 }
 .footer span:last-child{
@@ -244,12 +291,19 @@ font-style: normal;
 font-size: 14px;
 line-height: 1.7;
 color: var(--color-mainWhite);
+
 }
 address .email, address .tel{
   font-style: normal;
   font-size: 14px;
   line-height: 1.7;
   color: rgba(255, 255, 255, 0.6);
+}
+address .address-list-item:first-child{
+  margin-top: 20px;
+}
+.address-list-item{
+  margin-top: 9px;
 }
 .link:hover{
   color:var(--color-mainBlue);
