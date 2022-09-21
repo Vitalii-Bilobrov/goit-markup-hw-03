@@ -24,6 +24,11 @@
   letter-spacing: 0.03em;
   margin: 0;
 }
+img{
+  display: block;
+  margin: 0;
+  padding: 0;
+}
 .section{
   margin-top: 0;
   margin-bottom: 0;
@@ -72,10 +77,11 @@ font-size: 14px;
 line-height: 1.1;
 letter-spacing: 0.02em;
 margin-left:auto;
-margin-top: 0;
-margin-bottom: 0;
-padding-top: 32px;
-padding-bottom:32px;
+}
+.tel-email li a{
+  display: block;
+  padding: 32px 0;
+
 }
 .tel-email li:nth-child(2){
   margin-left: 50px;
@@ -96,7 +102,7 @@ ul{
 
 }
 .hero .container{
-  padding-top: 200px;
+  text-align: center;
 }
 .company-name {
   font-family: "Raleway";
@@ -122,9 +128,6 @@ background-color: var(--color-darckGray);
 color: var(--color-mainWhite);
 padding-top: 200px;
 padding-bottom: 200px;
-}
-.hero .container{
-  text-align: center;
 }
 .advantages-description{
 color:var(--color-lightGray);
@@ -160,6 +163,7 @@ margin-right: auto;
 }
 .advantages-section{
 padding-top: 94px;
+padding-bottom: 94px;
 }
 .advantages-list{
   display: flex;
@@ -169,6 +173,7 @@ font-weight: 700;
 font-size: 14px;
 line-height: 1.4;
 letter-spacing: 0.03em;
+margin-bottom: 10px;
 }
 .advantages-description{
 font-size: 14px;
@@ -176,12 +181,13 @@ line-height: 1.7;
 color: var(--color-lightGray);
 }
 .section-work{
-  padding-top: 118px;
-  padding-bottom: 94px;
+  padding-top: 0;
+ 
 }
 .work-list{
   display: flex;
   margin-top: 50px;
+  gap: 30px;
 }
 .work-list img{
   display: block;
@@ -192,26 +198,18 @@ color: var(--color-lightGray);
 .team-list{
   display: flex;
   margin-top: 50px;
-  margin-bottom: 0;
+  gap: 30px;
 }
 .team-list-description{
   padding-top: 30px;
   padding-bottom: 30px;
-}
-.team-list li:nth-child(1){
-  margin-left: 30px;
-}
-.team-list li:nth-child(2){
-  margin-left: 30px;
-}
-.team-list li:nth-child(3){
-  margin-left: 30px;
+  background-color: var(--color-mainWhite);
 }
 .card{
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 0px 0px 4px 4px;
 }
-.h2{
+.section-work-title{
 font-weight: 700;
 font-size: 36px;
 line-height: 1.2;
@@ -239,9 +237,9 @@ text-align: center;
 }
 /*Portfolio*/
 .section-portfolio{
- padding-bottom: 94px;
- padding-top: 94px;
  border-top: 1px solid  var(--color-ghostWhite1);
+ padding-top: 94px;
+ padding-bottom: 94px;
 }
 .flex{
   display: flex;
@@ -291,7 +289,6 @@ border: none;
   display: flex;
   margin-top: 50px;
   flex-wrap: wrap;
-  align-content: space-between;
   gap: 30px;
 }
 .project-list img{
@@ -302,13 +299,13 @@ border: none;
 .project-list li{
  width: 370px;
 }
-.project-list div{
+.project-list-description{
   border: 1px solid var(--color-greatLight) ;
   border-top: none;
   padding-top: 24px;
   padding-bottom: 20px;
   padding-left: 24px;
-  width: 370px;
+  
 }
 .projects-name{
 font-weight: 700;
@@ -329,6 +326,9 @@ margin-top: 4px;
   padding-top: 60px;
   padding-bottom: 60px;
 }
+.address-block{
+ margin-top: 20px;
+}
 .footer span:last-child{
   color: var(--color-mainWhite);
 }
@@ -346,9 +346,6 @@ address .email, address .tel{
   font-size: 14px;
   line-height: 1.7;
   color: rgba(255, 255, 255, 0.6);
-}
-.address-list-item{
-  margin-top: 9px;
 }
 .link:hover{
   color:var(--color-mainBlue);
